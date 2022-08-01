@@ -1,0 +1,72 @@
+.card-stats {
+  border-radius: 15px;
+
+  &.work {
+    background-color: var(--light-red-word);
+    background-position: right 17.4px top -10.9px;
+    background-image: url("/assets/icon-work.svg");
+  }
+
+  &.play {
+    background-color: var(--soft-blue);
+    background-position: right 14.4px top -11px;
+    background-image: url("/assets/icon-play.svg");
+  }
+
+  &.study {
+    background-color: var(--light-red-study);
+    background-position: right 17px top -6px;
+    background-image: url("/assets/icon-study.svg");
+  }
+
+  &.exercise {
+    background-color: var(--lime-green);
+    background-position: right 17.6px top -0.4px;
+    background-image: url("/assets/icon-exercise.svg");
+  }
+
+  &.social {
+    background-color: var(--violet);
+    background-position: right 13.5px top -15px;
+    background-image: url("/assets/icon-social.svg");
+  }
+
+  &.self {
+    background-color: var(--soft-orange);
+    background-position: right 16px top -10px;
+    background-image: url("/assets/icon-self-care.svg");
+  }
+
+  .in-card {
+    margin-top: 38px;
+    background-color: var(--dark-blue);
+    border-radius: 15px;
+    padding: 28px 24px;
+
+    display: grid;
+    gap: 6px;
+    grid-template-columns: repeat(2, 1fr);
+
+    h3 {
+      font-weight: 500;
+      @include text(18px, 21px);
+    }
+
+    .hours {
+      font-weight: 300;
+      @include text(32px, 38px);
+    }
+
+    .last {
+      font-weight: 400;
+      @include text(15px, 18px);
+      color: var(--pale-blue);
+    }
+
+    .ellipsis,
+    .last {
+      align-self: center;
+      justify-self: flex-end;
+    }
+  }
+}

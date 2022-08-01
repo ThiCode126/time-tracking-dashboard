@@ -71,6 +71,12 @@
   justify-content: space-between;
 }
 
+@mixin flexSpaceAround {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
 /*
     GRID
 */

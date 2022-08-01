@@ -4,6 +4,22 @@ body {
 
   font-family: "Rubik", sans-serif;
   font-weight: 400;
+
+  .app {
+    @include mY(81px);
+
+    .cw {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+
+      .body {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+      }
+    }
+  }
 }
 
 .cw {
@@ -24,10 +40,30 @@ body {
   cursor: pointer;
 }
 
+.up1::first-letter {
+  text-transform: uppercase;
+}
+
 /**
 * ? DeskTop
 */
 @media (min-width: 1440px) {
+  body {
+    .app {
+      @include mY(253px);
+
+      .cw {
+        flex-direction: row;
+        gap: 30px;
+
+        .body {
+          flex-direction: row;
+          gap: 30px;
+          flex-wrap: wrap;
+        }
+      }
+    }
+  }
   .cw {
     width: 1110px;
   }
