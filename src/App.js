@@ -36,18 +36,23 @@ function App() {
             dataStats.map((item, k) => <div key={k} className={`card-stats ${item.title.toLowerCase()}`}
             >
               <div className="in-card">
+                <div className="header-card">
 
-                <h3>
-                  {item.title}
-                </h3>
-                <div className="ellipsis">
-                  <EllipsisSVG />
+                  <h3>
+                    {item.title}
+                  </h3>
+                  <div className="ellipsis">
+                    <EllipsisSVG />
+                  </div>
                 </div>
-                <div className="hours">
-                  {item.timeframes[timeStats].current}hrs
-                </div>
-                <div className="last">
-                  <span className="up1">Last</span> <span className="up1">{timeStats}</span> {item.timeframes[timeStats].current}hrs
+                <div className="body-card">
+
+                  <div className="hours">
+                    {item.timeframes[timeStats].current}hrs
+                  </div>
+                  <div className="last">
+                    <span className="up1">Last</span> <span className="up1">{timeStats}</span> {item.timeframes[timeStats].current}hrs
+                  </div>
                 </div>
               </div>
             </div>)

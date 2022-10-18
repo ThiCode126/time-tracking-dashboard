@@ -14,8 +14,11 @@ body {
       gap: 24px;
 
       .body {
-        display: flex;
-        flex-direction: column;
+        // display: flex;
+        // flex-direction: column;
+        display: grid;
+        grid-template-columns: 1fr;
+
         gap: 24px;
       }
     }
@@ -57,9 +60,8 @@ body {
         gap: 30px;
 
         .body {
-          flex-direction: row;
+          grid-template-columns: repeat(3, 1fr);
           gap: 30px;
-          flex-wrap: wrap;
         }
       }
     }
